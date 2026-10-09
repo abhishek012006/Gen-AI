@@ -1,0 +1,45 @@
+[project]
+name = "gen-ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abhishek012006", email = "abhishektanti709@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "accelerate>=1.15.0",
+    "anthropic>=1.12.1",
+    "datasets>=5.1.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "langchain>=1.4.4",
+    "langgraph>=1.2.14",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "openai>=3.26.1",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.65.0",
+    "torch>=2.11.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.26.0",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+gen-ai = "gen_ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
