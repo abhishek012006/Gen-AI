@@ -11,6 +11,7 @@ dependencies = [
     "accelerate>=1.15.0",
     "anthropic>=1.12.1",
     "datasets>=5.1.0",
+    "fastapi[standard]>=0.143.0",
     "ipykernel>=7.4.0",
     "jupyter>=1.1.1",
     "langchain>=1.4.4",
@@ -25,6 +26,7 @@ dependencies = [
     "torchaudio>=2.11.0",
     "torchvision>=0.26.0",
     "transformers>=5.19.0",
+    "uvicorn>=0.54.0",
 ]
 
 [project.scripts]
