@@ -17,6 +17,7 @@ dependencies = [
     "langchain>=1.4.4",
     "langgraph>=1.2.14",
     "matplotlib>=3.11.2",
+    "nltk>=3.10.3",
     "numpy>=2.5.3",
     "openai>=3.26.1",
     "pandas>=3.0.6",
